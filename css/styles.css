@@ -1,0 +1,325 @@
+:root{
+    --main-light-color:#FFFFFF;
+    --main-font-color:#434455;
+    --main-active-color:#4D5AE5;
+    --hero-bg-color:#2E2F42;;
+    --main-text-color:#2E2F42;
+    --logo-part-color:#2E2F42;
+    --menu-button-color:#E7E9FC;
+    --active-button-color:#188CE8;
+    --active-bg-color:#404BBF;
+    --cloud-color:#F4F4FD;
+    --navy-blue-color:#2E2F42;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:var(--main-light-color);
+    color:var(--main-font-color);
+    font-size: 14px;
+}
+img {
+    display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.link {
+    text-decoration: none;
+}
+.visually-hidden {
+    position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+  }
+  .container{
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* HEADER */
+.header{
+    border-bottom: 1px solid var(--menu-button-color)
+}
+.header-container{
+    display: flex;
+    align-items: center;
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color:var(--main-active-color);
+    margin-right: 76px;
+
+}
+.logo-part {
+    color:var(--logo-part-color);
+}
+.header-nav{
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.main-nav{
+    display: flex;
+    gap: 40px;
+}
+.nav-menu {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--main-text-color);
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.nav-menu:hover,
+.nav-menu:focus {
+    color:var(--active-bg-color)
+}
+.address{
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--main-font-color);    
+}
+.address:hover,
+.address:focus {
+    color:var(--active-bg-color);
+}
+.contact-address{
+    display: flex;
+    gap: 40px;
+}
+
+/* HERO */
+.hero{
+    background:var(--hero-bg-color);
+    padding: 188px 0;
+}
+.hero-title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color:var(--main-light-color);
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.hero-button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color:var(--main-light-color);
+    background-color:var(--main-active-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+   
+}
+.hero-button:focus,
+.hero-button:hover{
+    background-color:var(--active-bg-color)  
+}
+
+/* MAIN BODY */
+.section-about-company {
+    padding: 120px 0;
+}
+.filter-section { 
+    padding: 96px 0 120px;
+}
+.filter-btn {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+.menu-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color:var(--main-active-color);
+    background-color:var(--cloud-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding: 12px 24px;
+    border: 1px solid var(--menu-button-color);
+}
+.menu-button:hover,
+.menu-button:focus {
+    color:var(--main-light-color);
+    background-color:var( --active-bg-color);  
+    border: 1px solid transparent ;
+}
+.what-we-doing{
+    padding-bottom: 120px;
+}
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color:var(--main-text-color);
+    margin-bottom: 72px;
+}
+.section-desc{
+    display: flex;
+    gap: 24px;
+}
+.photo-board{
+    width: calc((100% - 48px) / 3);
+}
+.filter-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.filter-card{
+    width: calc((100% - 48px) / 3); 
+}
+.container-product{
+    padding: 32px 16px;
+    border: 1px solid var(--menu-button-color);
+    border-top: none; 
+
+}
+.product-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:var(--navy-blue-color);
+    margin-bottom: 8px;
+
+}
+.product-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--main-font-color);
+}
+.section-worker{
+    padding: 120px 0;
+    background:var(--cloud-color);
+}
+.card{
+    width: calc((100% - 72px) / 4); 
+    background:var(--main-light-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.card-list{
+    display: flex;
+    gap: 24px;
+}
+.our-advant{
+    display: flex; 
+    gap: 24px;
+}
+.our-advant-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    margin-bottom: 8px;
+}
+
+.advant-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--main-font-color);
+}
+.advant-board{
+    width: calc((100% - 72px) / 4);
+}
+.worker-container{
+    padding: 32px 16px;
+    border-radius: 0px 0px 4px 4px;
+}
+.name-worker {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:var(--main-text-color);
+    text-align: center;
+    margin-bottom: 8px;
+}
+.activity {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-font-color);
+    text-align: center; 
+
+}
+
+/* FOOTER */
+.footer{
+    background:var(--navy-blue-color);
+    padding: 100px 0;
+}
+.footer-link{
+    display: inline-block; 
+    margin-bottom: 16px; 
+}
+.footer-logo-part {
+   color:var(--cloud-color); 
+}
+.footer-cont {
+   line-height: 1.71;
+   color: var(--cloud-color);
+   font-style: normal;
+   letter-spacing: 0.02em;
+   max-width: 264px;
+}
+
+
+
